@@ -1,5 +1,10 @@
 import streamlit as st 
-from PIL import Image 
+from PIL import Image
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
 def Brothers():
   st.header('中信兄弟')
   st.write('兄弟飯店棒球隊(1984-1989年)→兄弟象隊(1990～2013年)→中信兄弟(2014-至今)')
