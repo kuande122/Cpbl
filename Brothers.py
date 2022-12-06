@@ -3,7 +3,7 @@ from PIL import Image
 def Brothers():
   st.header('中信兄弟')
   st.write('兄弟象(1990-2013) – 中信兄弟(2014 - 至今)')
-  image = Image.open('Brothers.png')
+  image = Image.open('Brothers/Brothers.png')
   st.image(image)
   col1, col2 = st.columns(2)
   col1.metric("季冠軍🏆", "18  次")
