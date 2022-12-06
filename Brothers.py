@@ -1,6 +1,6 @@
 import streamlit as st 
 from PIL import Image
-primaryColor="#F63366"
+primaryColor="##FFFF00"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#262730"
