@@ -1,10 +1,5 @@
 import streamlit as st 
 from PIL import Image
-primaryColor="##FFFF00"
-backgroundColor="#FFFF00"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
 def Brothers():
   st.header('中信兄弟')
   st.write('兄弟飯店棒球隊(1984-1989年)→兄弟象隊(1990～2013年)→中信兄弟(2014-至今)')
@@ -13,7 +8,7 @@ def Brothers():
     image = Image.open('Brothers/Brothers.png')
     st.image(image)
   with col2:
-    st.write('擁有者:中信金控',textprops = {"fontsize" : 7})
+    st.write('擁有者:中信金控',textsize:15)
     st.write('領隊:劉志威')
     st.write('總教練:林威助')
     st.write('識別色彩:黃色')
