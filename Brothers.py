@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image 
 def Brothers():
   st.header('中信兄弟')
-  st.write('兄弟飯店棒球隊（1984-1989年）→兄弟象隊( 1990～2013年）→中信兄弟( 2014-至今)')
+  st.write('兄弟飯店棒球隊(1984-1989年)→兄弟象隊(1990～2013年)→中信兄弟(2014-至今)')
   image = Image.open('Brothers/Brothers.png')
   st.image(image)
   col1, col2 = st.columns(2)
