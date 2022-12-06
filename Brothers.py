@@ -1,7 +1,7 @@
 import streamlit as st 
 from PIL import Image
 primaryColor="##FFFF00"
-backgroundColor="#FFFFFF"
+backgroundColor="#FFFF00"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#262730"
 font="sans serif"
