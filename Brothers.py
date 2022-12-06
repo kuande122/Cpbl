@@ -1,5 +1,5 @@
 import streamlit as st 
-import streamlit run
+import streamlit run  as st 
 from PIL import Image
 def Brothers():
   st.header('中信兄弟')
