@@ -8,7 +8,8 @@ def Brothers():
     image = Image.open('Brothers/Brothers.png')
     st.image(image)
   with col2:
-    st.header('中信兄弟')
+    #st.header('中信兄弟')
+    st.write("""## 中信兄弟""")
     st.write("""##### 擁有者:中信金控""")
     st.write("""##### 領隊:劉志威""")
     st.write("""##### 總教練:林威助""")
