@@ -16,12 +16,16 @@ if option == '中信兄弟':
   Brothers.Brothers()
   Baseballfield.Taichung()
 if option == '統一7-ELEVEn獅':
-  Unilions.Unilions()  
+  Unilions.Unilions()
+   Baseballfield.Tainan()
 if option == '樂天桃猿':
-  Rakuten.Rakuten()  
+  Rakuten.Rakuten() 
+  Baseballfield.Taoyuan()
 if option == '味全龍':
   Dragons.Dragons()
+  Baseballfield.Taipei()
 if option == '富邦悍將':
   Guardians.Guardians()
+  Baseballfield.NewTaipei()
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
