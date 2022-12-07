@@ -1,3 +1,4 @@
+import streamlit as st 
 from streamlit_folium import folium_static #地圖套件
 import folium 
 def Taichung():
