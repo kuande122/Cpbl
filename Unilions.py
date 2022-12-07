@@ -7,7 +7,7 @@ def Unilions():
     st.image(image)
   with col2:
     st.write("""## 統一7-ELEVEn獅""")
-    st.write("""##### CTBC Brothers Baseball Club""")
+    st.write("""##### Unilions""")
     st.write("""##### 擁有者:統一企業""")
     st.write("""##### 領隊:蘇泰安""")
     st.write("""##### 總教練:林岳平""")
