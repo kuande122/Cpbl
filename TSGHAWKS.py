@@ -3,7 +3,7 @@ from PIL import Image
 def TSGHAWKS():  
   col1, col2 = st.columns(2)
   with col1:
-    image = Image.open('TSGHAWKS/TSGHAWKS.')
+    image = Image.open('TSGHAWKS/TSGHAWKS.jpg')
     st.image(image)
   with col2:
     st.write("""## 台鋼雄鷹""")
