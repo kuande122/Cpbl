@@ -77,7 +77,7 @@ def NewTaipei():
      st.write('地址：新北市新莊區立德里和興街66號')
      st.write('草皮：天然草皮（百慕達草）')
      st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
-     st.write('觀眾席數：12,150席(內野:8,150席 外野:4,000席)')
+     st.write('觀眾席數：12,150席(內野:8,150席，外野:4,000席)')
      st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
      image = Image.open('Baseballfield/新莊全景.png')
      st.image(image)
