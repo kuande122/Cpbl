@@ -119,7 +119,7 @@ def Hsinchu():
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m7 = folium.Map(width='50%', height='90%',location=[22.65449, 120.35892], zoom_start=17)
+     m7 = folium.Map(width='50%', height='88%',location=[22.65449, 120.35892], zoom_start=17)
      tooltip = "新竹市立棒球場"
      folium.Marker([22.65449, 120.35892], popup="新竹市立棒球場", tooltip=tooltip
      ).add_to(m7)
