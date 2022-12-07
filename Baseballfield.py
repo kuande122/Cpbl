@@ -26,7 +26,7 @@ def Tainan():
     st.write('地址：臺南市南區健康路一段257號')
     st.write('觀眾席數：12,000席')
     st.write('全壘打牆距離：左外野：339英呎 中外野：400英呎 右外野：339英呎')
-    image = Image.open('台南球場.jpg')
+    image = Image.open('Baseballfield/台南球場.jpg')
     st.image(image)
   with col2:  
     m3 = folium.Map(width='50%', height='80%',location=[22.98043, 120.2062], zoom_start=16)
@@ -43,7 +43,7 @@ def Taipei():
     st.write('觀眾席數：10,000席 內野數：10,000席 外野野餐區:')
     st.write('草皮：人工草皮')
     st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-    image = Image.open('台北天母球場.jpg')
+    image = Image.open('Baseballfield/台北天母球場.jpg')
     st.image(image)
   with col2: 
     m5 = folium.Map(width='50%', height='80%',location=[25.11374, 121.53345], zoom_start=16)
@@ -62,7 +62,7 @@ def Taoyuan():
     st.write('地址：桃園市中壢區芝芭里領航北路1段1號')
     st.write('觀眾席數：兩萬席（內野12,000席，外野8,000席）')
     st.write('全壘打牆距離：左外野：330英呎 中外野：400英呎 右外野：330英呎')
-    image = Image.open('桃園球場.png')
+    image = Image.open('Baseballfield/桃園球場.png')
     st.image(image)
   with col2: 
     m2 = folium.Map(location=[25.00054,121.20038], zoom_start=16)
@@ -80,7 +80,7 @@ def NewTaipei():
      st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
      st.write('觀眾席數：12,150席 內野數：8,150席 外野數：4,000席')
      st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-     image = Image.open('新莊全景.jpg')
+     image = Image.open('Baseballfield/新莊全景.jpg')
      st.image(image)
   with col2:
       # add marker for Liberty Bell
