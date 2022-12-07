@@ -12,3 +12,5 @@ if option == '中信兄弟':
   Brothers.Brothers()
 if option == '統一7-ELEVEn獅':
   Unilions.Unilions()  
+if option == '樂天桃猿':
+  Rakuten.Rakuten()  
