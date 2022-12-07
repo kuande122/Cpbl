@@ -109,7 +109,7 @@ def Kaohsiung():
      # call to render Folium map in Streamlit
      folium_static(m6)
 def Hsinchu():
-     col1, col2 = st.columns(2)
+  col1, col2 = st.columns(2)
   with col1:
      st.header('主場:新竹市立棒球場')
      st.write('地址：新竹市北區西大路559號')
