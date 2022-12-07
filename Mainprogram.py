@@ -17,9 +17,9 @@ if option == '統一7-ELEVEn獅':
   Unilions.Unilions()  
 if option == '樂天桃猿':
   Rakuten.Rakuten()  
-if option == '味全龍'：
+if option == '味全龍':
   Dragons.Dragons()
-if option == '富邦悍將'：
+if option == '富邦悍將':
   Guardians.Guardians()
-if option == '台鋼雄鷹'：
+if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS(）
