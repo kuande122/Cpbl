@@ -91,7 +91,7 @@ def NewTaipei():
      # call to render Folium map in Streamlit
      folium_static(m5)
 def Kaohsiung():
-     col1, col2 = st.columns(2)
+  col1, col2 = st.columns(2)
   with col1:
      st.header('主場:高雄市澄清湖棒球場')
      st.write('地址：高雄市鳥松區蔦松里大埤路113號')
