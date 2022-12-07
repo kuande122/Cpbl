@@ -1,5 +1,6 @@
 import streamlit as st
 import Brothers
+import Unilions
 st.title('中華職棒資訊面板系統')
 st.sidebar.header('選擇球隊及數據')
 option = st.sidebar.selectbox( '選擇球隊？', ['中信兄弟', '統一7-ELEVEn獅', '味全龍', '樂天桃猿','富邦悍將'])
@@ -8,3 +9,5 @@ expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
 if option == '中信兄弟':
   Brothers.Brothers()
+if option == '統一7-ELEVEn獅':
+  Brothers.Unilions()  
