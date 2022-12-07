@@ -1,9 +1,9 @@
 import streamlit as st 
 from PIL import Image
-def Brothers():  
+def Unilions():  
   col1, col2 = st.columns(2)
   with col1:
-    image = Image.open('Brothers/Unilions.png')
+    image = Image.open('Unilions/Unilions.png')
     st.image(image)
   with col2:
     st.write("""## 統一7-ELEVEn獅""")
@@ -11,34 +11,20 @@ def Brothers():
     st.write("""##### 擁有者:統一企業""")
     st.write("""##### 領隊:蘇泰安""")
     st.write("""##### 總教練:林岳平""")
-    st.write("""##### 識別色彩:綠色 → 橘色  """)
-  st.write('統一棒球隊（1989年）-統一獅（1990年–2007年）-統一7-ELEVEn獅（2008年–至今')
-  col1, col2 = st.columns(2)
-  col1.metric("季冠軍🏆", "15  次")
-  col2.metric("年度冠軍🏆", "10  次")
-  st.write('中信兄弟隊前身兄弟象隊為中職四支創始球隊之一，1992年至1994年曾創下空前的連續三年奪下總冠軍之傲人成績，1992年球季更創下了例行賽45場中37場封王最快速封王的紀錄。之後兄弟象隊於2001年至2003年達成第二次三連霸紀錄，成為中職至今唯一兩度締造三連霸紀錄的球隊。2010年兄弟象隊達成了隊史千勝紀錄，為中職至今唯二達成的球隊，同年下半季取得隊史第11座季冠軍，在當年總冠軍賽以四連勝橫掃興農牛隊，奪下隊史第七座總冠軍，之後10年間，中信兄弟多次闖進總冠軍賽卻始終鎩羽而歸，終於在2021年奪下了隊史第八座總冠軍，奪冠次數僅次於統一7-ELEVEn獅隊，為中華職棒史上奪得總冠軍次數第二多的球隊。')
-  st.write("2022年度歌曲 感動黃潮")
-  audio_file = open("Brothers/感動黃潮.mp3", "rb")
-  st.audio(audio_file.read()) 
-  st.write("2021年度歌曲 一心兄弟")
-  audio_file = open("Brothers/一心兄弟.mp3", "rb")
-  st.audio(audio_file.read())  
-  st.write("嗆司曲 兄弟精神")
-  audio_file = open("Brothers/兄弟精神.mp3", "rb")
-  st.audio(audio_file.read()) 
-
-st.header('統一7-ELEVEn獅')
-  st.write('統一獅(1990-2007) – 統一7-ELEVEn獅(2008 - 至今 )')
-
-  image = Image.open('unilion.png')
-  st.image(image)
+    st.write("""##### 識別色彩:綠色 → 橘色""")
+  st.write('統一棒球隊（1989年）-統一獅（1990年–2007年）-統一7-ELEVEn獅（2008年–至今)')
   col1, col2 = st.columns(2)
   col1.metric("季冠軍🏆", "15  次")
   col2.metric("年度冠軍🏆", "10  次")
   st.write('統一7-ELEVEn獅隊為台灣在1989年成立中華職棒聯盟時的四支創始球隊之一，也是唯一從職棒元年存續至今的球隊，最初僅命名為統一獅隊；是聯盟第一支有二軍的球隊，同時也是目前中華職棒聯盟贏得總冠軍次數最多的球隊，母企業為統一企業。由於中職初創時統一獅隊成軍較晚，人手不足，經驗也有限，因此於職棒元年開打後，即創下八連敗的紀錄，並在上半球季敬陪末座。但秉著「誠實苦幹」的企業精神，統一球團積極整軍經武，使獅子軍下半球季戰績得以回升，全年度排名第三，免於墊底。隔年更在投打戰力補強有成的情況下，於總冠軍賽擊敗味全龍隊，笑擁隊史首座總冠軍獎盃。')
+  st.write("2022年度歌曲 大贏四方")
+  audio_file = open("Unilions/大贏四方.mp3", "rb")
+  st.audio(audio_file.read()) 
   st.write("2021年度歌曲 冠軍獅王")
-  audio_file = open("冠軍獅王.mp3", "rb")
-  st.audio(audio_file.read()) 
+  audio_file = open("Unilions/冠軍獅王.mp3", "rb")
+  st.audio(audio_file.read())  
   st.write("嗆司曲 誰與爭鋒")
-  audio_file = open("誰與爭鋒.mp3", "rb")
+  audio_file = open("Unilions/誰與爭鋒.mp3", "rb")
   st.audio(audio_file.read()) 
+
+
