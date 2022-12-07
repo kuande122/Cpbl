@@ -17,7 +17,7 @@ if option == '中信兄弟':
   Baseballfield.Taichung()
 if option == '統一7-ELEVEn獅':
   Unilions.Unilions()
-   Baseballfield.Tainan()
+  Baseballfield.Tainan()
 if option == '樂天桃猿':
   Rakuten.Rakuten() 
   Baseballfield.Taoyuan()
