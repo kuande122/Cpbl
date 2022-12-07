@@ -79,7 +79,7 @@ def NewTaipei():
      st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
      st.write('觀眾席數：12,150席 內野數：8,150席 外野數：4,000席')
      st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-     image = Image.open('Baseballfield/新莊全景.jpg')
+     image = Image.open('Baseballfield/新莊全景.png')
      st.image(image)
   with col2:
       # add marker for Liberty Bell
