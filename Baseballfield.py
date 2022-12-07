@@ -28,13 +28,13 @@ def Tainan():
     image = Image.open('Baseballfield/台南球場.jpg')
     st.image(image)
   with col2:  
-    m3 = folium.Map(width='50%', height='83%',location=[22.98043, 120.2062], zoom_start=17)
+    m2 = folium.Map(width='50%', height='83%',location=[22.98043, 120.2062], zoom_start=17)
 
     # add marker for Liberty Bell
     tooltip = "臺南市立棒球場"
     folium.Marker([22.98043, 120.2062], popup="臺南市立棒球場", tooltip=tooltip
-    ).add_to(m3)
-    folium_static(m3)
+    ).add_to(m2)
+    folium_static(m2)
 def Taipei():      
   col1, col2 = st.columns(2)
   with col1:  
@@ -46,15 +46,15 @@ def Taipei():
     image = Image.open('Baseballfield/台北天母球場.jpg')
     st.image(image)
   with col2: 
-    m5 = folium.Map(width='50%', height='100%',location=[25.11374, 121.53345], zoom_start=17)
+    m3 = folium.Map(width='50%', height='100%',location=[25.11374, 121.53345], zoom_start=17)
 
     # add marker for Liberty Bell
     tooltip = "臺北天母棒球場"
     folium.Marker([25.11374, 121.53345], popup="臺北天母棒球場", tooltip=tooltip
-    ).add_to(m5)
+    ).add_to(m3)
 
     #   call to render
-    folium_static(m5)
+    folium_static(m3)
 def Taoyuan():        
   col1, col2 = st.columns(2)
   with col1: 
@@ -65,11 +65,11 @@ def Taoyuan():
     image = Image.open('Baseballfield/桃園球場.png')
     st.image(image)
   with col2: 
-    m2 = folium.Map(width='50%', height='80%',location=[25.00054,121.20038], zoom_start=16)
+    m4 = folium.Map(width='50%', height='80%',location=[25.00054,121.20038], zoom_start=16)
     tooltip = "桃園國際棒球場"
     folium.Marker([25.00054,121.20038], popup="桃園國際棒球場", tooltip=tooltip
-    ).add_to(m2)
-    folium_static(m2)
+    ).add_to(m4)
+    folium_static(m4)
 def NewTaipei():
   col1, col2 = st.columns(2)
   with col1:
@@ -83,10 +83,30 @@ def NewTaipei():
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m = folium.Map(width='50%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
+     m5 = folium.Map(width='50%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
      tooltip = "新北新莊棒球場"
      folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip
-     ).add_to(m)
+     ).add_to(m5)
 
      # call to render Folium map in Streamlit
-     folium_static(m)
+     folium_static(m5)
+def Kaohsiung():
+     col1, col2 = st.columns(2)
+  with col1:
+     st.header('主場:新北新莊棒球場')
+     st.write('地址：新北市新莊區立德里和興街66號')
+     st.write('草皮：天然草皮（百慕達草）')
+     st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
+     st.write('觀眾席數：12,150席 內野數：8,150席 外野數：4,000席')
+     st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
+     image = Image.open('Baseballfield/新莊全景.png')
+     st.image(image)
+  with col2:
+      # add marker for Liberty Bell
+     m6 = folium.Map(width='50%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
+     tooltip = "新北新莊棒球場"
+     folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip
+     ).add_to(m6)
+
+     # call to render Folium map in Streamlit
+     folium_static(m6)
