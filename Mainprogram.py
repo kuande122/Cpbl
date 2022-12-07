@@ -14,6 +14,7 @@ expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
 if option == '中信兄弟':
   Brothers.Brothers()
+  Baseballfield.Taichung()
 if option == '統一7-ELEVEn獅':
   Unilions.Unilions()  
 if option == '樂天桃猿':
