@@ -10,4 +10,4 @@ expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客�
 if option == '中信兄弟':
   Brothers.Brothers()
 if option == '統一7-ELEVEn獅':
-  Brothers.Unilions()  
+  Unilions.Unilions()  
