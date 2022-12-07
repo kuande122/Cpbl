@@ -4,7 +4,7 @@ import Unilions
 import Rakuten
 import Dragons 
 import Guardians
-import TSG HAWKS
+import TSGHAWKS
 st.title('中華職棒資訊面板系統')
 st.sidebar.header('選擇球隊及數據')
 option = st.sidebar.selectbox( '選擇球隊？', ['中信兄弟', '統一7-ELEVEn獅', '味全龍', '樂天桃猿','富邦悍將','台鋼雄鷹'])
@@ -21,4 +21,5 @@ if option == '味全龍'：
   Dragons.Dragons()
 if option == '富邦悍將'：
   Guardians.Guardians()
-
+if option == '台鋼雄鷹'：
+  TSGHAWKS.TSGHAWKS(）
