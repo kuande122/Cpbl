@@ -113,13 +113,13 @@ def Hsinchu():
   with col1:
      st.header('主場:新竹市立棒球場')
      st.write('地址：新竹市北區西大路559號')
-     st.write('觀眾席數：10,000席 內野數：4,000席 外野數：6,000席')
+     st.write('觀眾席數：10,000席(內野數：4,000席，外野數：6,000席)')
      st.write('全壘打牆距離：左外野：328英呎 中外野：400英呎 右外野：328英呎')
      image = Image.open('Baseballfield/新竹棒球場.jpg')
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m7 = folium.Map(width='50%', height='100%',location=[22.65449, 120.35892], zoom_start=17)
+     m7 = folium.Map(width='50%', height='80%',location=[22.65449, 120.35892], zoom_start=17)
      tooltip = "新竹市立棒球場"
      folium.Marker([22.65449, 120.35892], popup="新竹市立棒球場", tooltip=tooltip
      ).add_to(m7)
