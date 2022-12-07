@@ -74,7 +74,6 @@ def NewTaipei():
   col1, col2 = st.columns(2)
   with col1:
      st.header('主場:新北新莊棒球場')
-     st.write('全名：新北市立新莊棒球場（XinZhuang Baseball Stadium）')
      st.write('地址：新北市新莊區立德里和興街66號')
      st.write('草皮：天然草皮（百慕達草）')
      st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
