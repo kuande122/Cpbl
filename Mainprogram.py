@@ -22,4 +22,4 @@ if option == '味全龍':
 if option == '富邦悍將':
   Guardians.Guardians()
 if option == '台鋼雄鷹':
-  TSGHAWKS.TSGHAWKS(）
+  TSGHAWKS.TSGHAWKS()
