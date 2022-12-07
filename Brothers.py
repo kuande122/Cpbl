@@ -1,13 +1,14 @@
 import streamlit as st 
 from PIL import Image
 def Brothers():
-  st.header('中信兄弟')
+  
   st.write('兄弟飯店棒球隊(1984-1989年)→兄弟象隊(1990～2013年)→中信兄弟(2014-至今)')
   col1, col2 = st.columns(2)
   with col1:
     image = Image.open('Brothers/Brothers.png')
     st.image(image)
   with col2:
+    st.header('中信兄弟')
     st.write("""##### 擁有者:中信金控""")
     st.write("""##### 領隊:劉志威""")
     st.write("""##### 總教練:林威助""")
