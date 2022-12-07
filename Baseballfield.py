@@ -83,7 +83,7 @@ def NewTaipei():
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m5 = folium.Map(width='50%', height='95%',location=[25.04118, 121.44784], zoom_start=17)
+     m5 = folium.Map(width='50%', height='96%',location=[25.04118, 121.44784], zoom_start=17)
      tooltip = "新北新莊棒球場"
      folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip
      ).add_to(m5)
