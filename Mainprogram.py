@@ -24,6 +24,7 @@ if option == '樂天桃猿':
 if option == '味全龍':
   Dragons.Dragons()
   Baseballfield.Taipei()
+  Baseballfield.Hsinchu()
 if option == '富邦悍將':
   Guardians.Guardians()
   Baseballfield.NewTaipei()
