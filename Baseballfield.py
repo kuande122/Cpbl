@@ -60,7 +60,7 @@ def Taoyuan():
   with col1: 
     st.header('主場:桃園國際棒球場')
     st.write('地址：桃園市中壢區芝芭里領航北路1段1號')
-    st.write('觀眾席數：兩萬席（內野12,000席，外野8,000席）')
+    st.write('觀眾席數：兩萬席（內野:12,000席，外野:8,000席）')
     st.write('全壘打牆距離：左外野：330英呎 中外野：400英呎 右外野：330英呎')
     image = Image.open('Baseballfield/桃園球場.png')
     st.image(image)
@@ -119,7 +119,7 @@ def Hsinchu():
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m7 = folium.Map(width='50%', height='80%',location=[22.65449, 120.35892], zoom_start=17)
+     m7 = folium.Map(width='50%', height='90%',location=[22.65449, 120.35892], zoom_start=17)
      tooltip = "新竹市立棒球場"
      folium.Marker([22.65449, 120.35892], popup="新竹市立棒球場", tooltip=tooltip
      ).add_to(m7)
