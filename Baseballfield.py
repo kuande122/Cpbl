@@ -1,6 +1,6 @@
 from streamlit_folium import folium_static #地圖套件
 import folium 
-def TaichungIntercontinentalBaseballStadium():
+def Taichung():
     with col1:
         st.header('主場:臺中洲際棒球場')
         st.write('地址：臺中市北屯區崇德路三段835號')
