@@ -1,6 +1,7 @@
 import streamlit as st
 import Brothers
 import Unilions
+import Rakuten
 st.title('中華職棒資訊面板系統')
 st.sidebar.header('選擇球隊及數據')
 option = st.sidebar.selectbox( '選擇球隊？', ['中信兄弟', '統一7-ELEVEn獅', '味全龍', '樂天桃猿','富邦悍將'])
