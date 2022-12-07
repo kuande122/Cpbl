@@ -3,22 +3,21 @@ from PIL import Image
 from streamlit_folium import folium_static #地圖套件
 import folium 
 def Taichung():
-    col1, col2 = st.columns(2)
-    with col1:
-        st.header('主場:臺中洲際棒球場')
-        st.write('地址：臺中市北屯區崇德路三段835號')
-        st.write('觀眾席數：約兩萬席（內野14,321席對號座位，外野5,000席自由座位）')
-        st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-        image = Image.open('Baseballfield/台中洲際球場.png')
-        st.image(image)
-    with col2:
-        m1 = folium.Map(width='50%', height='80%',location=[24.19978, 120.68498], zoom_start=16)
-
-        # add marker for Liberty Bell
-        tooltip = "臺中洲際棒球場"
-        folium.Marker([24.19978, 120.68498], popup="臺中洲際棒球場", tooltip=tooltip
-        ).add_to(m1)
-        folium_static(m1)
+   col1, col2 = st.columns(2)
+   with col1:
+    st.header('主場:臺中洲際棒球場')
+    st.write('地址：臺中市北屯區崇德路三段835號')
+    st.write('觀眾席數：約兩萬席（內野14,321席對號座位，外野5,000席自由座位）')
+    st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
+    image = Image.open('Baseballfield/台中洲際球場.png')
+    st.image(image)
+   with col2:
+     m1 = folium.Map(width='50%', height='80%',location=[24.19978, 120.68498], zoom_start=16)
+     # add marker for Liberty Bell
+     tooltip = "臺中洲際棒球場"
+     folium.Marker([24.19978, 120.68498], popup="臺中洲際棒球場", tooltip=tooltip
+     ).add_to(m1)
+     folium_static(m1)
 def Tainan():   
   col1, col2 = st.columns(2)
   with col1:  
@@ -35,6 +34,7 @@ def Tainan():
     tooltip = "臺南市立棒球場"
     folium.Marker([22.98043, 120.2062], popup="臺南市立棒球場", tooltip=tooltip
     ).add_to(m3)
+    folium_static(m3)
 def Taipei():      
   col1, col2 = st.columns(2)
   with col1:  
@@ -65,7 +65,7 @@ def Taoyuan():
     image = Image.open('Baseballfield/桃園球場.png')
     st.image(image)
   with col2: 
-    m2 = folium.Map(location=[25.00054,121.20038], zoom_start=16)
+    m2 = folium.Map(width='50%', height='80%',location=[25.00054,121.20038], zoom_start=16)
     tooltip = "桃園國際棒球場"
     folium.Marker([25.00054,121.20038], popup="桃園國際棒球場", tooltip=tooltip
     ).add_to(m2)
@@ -84,7 +84,7 @@ def NewTaipei():
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m = folium.Map(location=[25.04054,121.44768], zoom_start=16)
+     m = folium.Map(width='50%', height='80%',location=[25.04054,121.44768], zoom_start=16)
      tooltip = "新北新莊棒球場"
      folium.Marker([25.04054,121.44768], popup="新北市立新莊棒球場", tooltip=tooltip
      ).add_to(m)
