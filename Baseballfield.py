@@ -95,7 +95,7 @@ def Kaohsiung():
   with col1:
      st.header('主場:高雄市澄清湖棒球場')
      st.write('地址：高雄市鳥松區蔦松里大埤路113號')
-     st.write('觀眾席數：20,000席 內野數：15,000席 外野數：5,000席')
+     st.write('觀眾席數：20,000席 內野:15,000席 外野:5,000席')
      st.write('全壘打牆距離：左外野：328英呎 中外野：400英呎 右外野：328英呎')
      image = Image.open('Baseballfield/高雄澄清湖球場.jpg')
      st.image(image)
@@ -113,7 +113,7 @@ def Hsinchu():
   with col1:
      st.header('主場:新竹市立棒球場')
      st.write('地址：新竹市北區西大路559號')
-     st.write('觀眾席數：10,000席(內野數：4,000席，外野數：6,000席)')
+     st.write('觀眾席數：10,000席(內野:4,000席，外野:6,000席)')
      st.write('全壘打牆距離：左外野：328英呎 中外野：400英呎 右外野：328英呎')
      image = Image.open('Baseballfield/新竹棒球場.jpg')
      st.image(image)
