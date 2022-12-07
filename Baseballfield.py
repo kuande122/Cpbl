@@ -28,7 +28,7 @@ def Tainan():
     image = Image.open('Baseballfield/台南球場.jpg')
     st.image(image)
   with col2:  
-    m3 = folium.Map(width='50%', height='83%',location=[22.98043, 120.2062], zoom_start=16)
+    m3 = folium.Map(width='50%', height='83%',location=[22.98043, 120.2062], zoom_start=20)
 
     # add marker for Liberty Bell
     tooltip = "臺南市立棒球場"
