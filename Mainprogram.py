@@ -30,4 +30,4 @@ if option == '富邦悍將':
   Baseballfield.NewTaipei()
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
-  Baseballfield.Kaohsiung():
+  Baseballfield.Kaohsiung()
