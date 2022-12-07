@@ -46,7 +46,7 @@ def Taipei():
     image = Image.open('Baseballfield/台北天母球場.jpg')
     st.image(image)
   with col2: 
-    m5 = folium.Map(width='50%', height='90%',location=[25.11374, 121.53345], zoom_start=17)
+    m5 = folium.Map(width='50%', height='100%',location=[25.11374, 121.53345], zoom_start=17)
 
     # add marker for Liberty Bell
     tooltip = "臺北天母棒球場"
