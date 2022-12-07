@@ -93,19 +93,17 @@ def NewTaipei():
 def Kaohsiung():
      col1, col2 = st.columns(2)
   with col1:
-     st.header('主場:新北新莊棒球場')
-     st.write('地址：新北市新莊區立德里和興街66號')
-     st.write('草皮：天然草皮（百慕達草）')
-     st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
-     st.write('觀眾席數：12,150席 內野數：8,150席 外野數：4,000席')
-     st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-     image = Image.open('Baseballfield/新莊全景.png')
+     st.header('主場:高雄市澄清湖棒球場')
+     st.write('地址：高雄市鳥松區蔦松里大埤路113號')
+     st.write('觀眾席數：20,000席 內野數：15,000席 外野數：5,000席')
+     st.write('全壘打牆距離：左外野：328英呎 中外野：400英呎 右外野：328英呎')
+     image = Image.open('Baseballfield/高雄澄清湖球場.jpg')
      st.image(image)
   with col2:
       # add marker for Liberty Bell
-     m6 = folium.Map(width='50%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
+     m6 = folium.Map(width='50%', height='100%',location=[22.65449, 120.35892], zoom_start=17)
      tooltip = "新北新莊棒球場"
-     folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip
+     folium.Marker([22.65449, 120.35892], popup="新北市立新莊棒球場", tooltip=tooltip
      ).add_to(m6)
 
      # call to render Folium map in Streamlit
