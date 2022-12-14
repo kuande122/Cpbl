@@ -65,7 +65,7 @@ elif option1=='投手成績':
     st.markdown('### 投手成績')
     teamsPitching=pd.read_excel("teamsPitching.xlsx") 
     teamsPitching1=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
-    st.write(teamsPitching1)
+    st.dataframe(teamsPitching1)
     st.header('數據分析')
     #plt.style.use("ggplot")
     #plt.plot(BrothersPitching.年度, BrothersPitching.防禦率,'.-' ,color='yellow')
