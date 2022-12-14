@@ -12,7 +12,7 @@ def Taichung():
     image = Image.open('Baseballfield/台中洲際球場.png')
     st.image(image)
    with col2:
-     m1 = folium.Map(width='100%', height='80%',location=[24.19978, 120.68498], zoom_start=16)
+     m1 = folium.Map(width='90%', height='80%',location=[24.19978, 120.68498], zoom_start=16)
      # add marker for Liberty Bell
      tooltip = "臺中洲際棒球場"
      folium.Marker([24.19978, 120.68498], popup="臺中洲際棒球場", tooltip=tooltip
@@ -28,7 +28,7 @@ def Tainan():
     image = Image.open('Baseballfield/台南球場.jpg')
     st.image(image)
   with col2:  
-    m2 = folium.Map(width='50%', height='83%',location=[22.98043, 120.2062], zoom_start=17)
+    m2 = folium.Map(width='80%', height='83%',location=[22.98043, 120.2062], zoom_start=17)
 
     # add marker for Liberty Bell
     tooltip = "臺南市立棒球場"
