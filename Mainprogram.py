@@ -3,6 +3,7 @@ import xlrd
 import openpyxl
 import pandas as pd
 import matplotlib.pyplot as plt
+from PIL import Image
 import plost
 import Brothers
 import Unilions
@@ -57,4 +58,6 @@ with col2:
               color='項目',
               legend='bottom',
               use_container_width=True)
-         
+ st.markdown('### 2022年年度主視覺')
+ image = Image.open('年度主視覺/option'.png')
+ st.image(image)
