@@ -50,7 +50,7 @@ with col1:
     st.markdown('### 球隊成績')
     st.dataframe(df)
 with col2:  
-  st.markdown('### 2022年主客場戰績Donut chart')
+  st.markdown('### 2022年全年度戰績Donut chart')
   plost.donut_chart(
               data=dount_chart_df ,
               theta='戰績',
