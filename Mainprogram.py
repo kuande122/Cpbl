@@ -1,7 +1,7 @@
 import streamlit as st
 import xlrd 
 import openpyxl
-import pandas
+import pandas as pd
 import Brothers
 import Unilions
 import Rakuten
