@@ -50,7 +50,7 @@ if option1=='球隊成績':
   st.markdown('### Donut chart')
   plost.donut_chart(
         data=df,
-        #theta=donut_theta,
+        theta=donut_theta,
         color='company',
         legend='bottom', 
         use_container_width=True)
