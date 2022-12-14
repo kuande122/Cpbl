@@ -3,4 +3,3 @@ xlrd
 openpyxl
 pandas
 matplotlib
-plost
