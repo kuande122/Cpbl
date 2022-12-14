@@ -45,20 +45,21 @@ if option == '富邦悍將':
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
   Baseballfield.Kaohsiung()
-col1,col2=st.columns((6,4))
-with col1:
-  if option1=='球隊成績':
-    st.markdown('### 球隊成績')
-    st.dataframe(df)
-with col2:  
-  st.markdown('### 2022年全年度戰績Donut chart')
-  plost.donut_chart(
-              data=dount_chart_df ,
-              theta='戰績',
-              color='項目',
-              legend='bottom',
-              use_container_width=True)
-st.markdown('### 2022年年度主視覺')
-image = Image.open(option+'.jpg')
-st.image(image)
+if option1=='球隊成績':
+  col1,col2=st.columns((6,4))
+  with col1:
+
+      st.markdown('### 球隊成績')
+      st.dataframe(df)
+  with col2:  
+    st.markdown('### 2022年全年度戰績Donut chart')
+    plost.donut_chart(
+                data=dount_chart_df ,
+                theta='戰績',
+                color='項目',
+                legend='bottom',
+                use_container_width=True)
+  st.markdown('### 2022年年度主視覺')
+  image = Image.open(option+'.jpg')
+  st.image(image)
  
