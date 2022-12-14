@@ -44,15 +44,17 @@ if option == '富邦悍將':
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
   Baseballfield.Kaohsiung()
-if option1=='球隊成績':
-  st.header('球隊成績')
-  st.dataframe(df)
-  
-st.markdown('### 2022年主客場戰績Donut chart')
-plost.donut_chart(
-            data=dount_chart_df ,
-            theta='戰績',
-            color='項目',
-            legend='bottom', 
-            use_container_width=True)
+col1,col2=st.columns((7,3))
+with col1:
+  if option1=='球隊成績':
+    st.header('球隊成績')
+    st.dataframe(df)
+with col2:  
+  st.markdown('### 2022年主客場戰績Donut chart')
+  plost.donut_chart(
+              data=dount_chart_df ,
+              theta='戰績',
+              color='項目',
+              legend='bottom', 
+              use_container_width=True)
          
