@@ -47,13 +47,13 @@ if option == '台鋼雄鷹':
 if option1=='球隊成績':
   st.header('球隊成績')
   st.dataframe(df)
-new_df=df.head(3)
+new_df=df.head(2)
 st.dataframe(new_df)
 st.markdown('### 2022年主客場戰績Donut chart')
 plost.donut_chart(
-            data=df,
+            data=new_df,
             theta='2022(下)',
-            color='主場勝','主場敗','主場和','客場勝','客場敗','客場和',
+            color='主場勝'
 
 
             legend='bottom', 
