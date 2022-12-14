@@ -53,7 +53,9 @@ st.markdown('### 2022年主客場戰績Donut chart')
 plost.donut_chart(
             data=df,
             theta='2022(下)',
-            color='主場勝',
+            color='主場勝','主場敗','主場和','客場勝','客場敗','客場和',
+
+
             legend='bottom', 
             use_container_width=True)
          
