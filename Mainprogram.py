@@ -51,8 +51,8 @@ if option1=='球隊成績':
 st.markdown('### 2022年主客場戰績Donut chart')
 plost.donut_chart(
             data=dount_chart_df ,
-            theta='數',
-            color='戰績',
+            theta='戰績',
+            color='項目',
             legend='bottom', 
             use_container_width=True)
          
