@@ -55,6 +55,6 @@ with col2:
               data=dount_chart_df ,
               theta='戰績',
               color='項目',
-              legend='bottom'
+              legend='bottom',
               use_container_width=True)
          
