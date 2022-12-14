@@ -87,7 +87,6 @@ elif option1=='投手成績':
     plt.xticks(teamsPitching_Guardians.年度)
     plt.xticks(teamsPitching_Rakuten.年度) 
     plt.xticks(teamsPitching_TSGHAWKS.年度) 
-    plt.title(option+'Pitching ERA VS Other Teams') # 設定圖表標題
     plt.xlabel('Year',fontsize="10")
     plt.ylabel('ERA',fontsize="10")
     plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
