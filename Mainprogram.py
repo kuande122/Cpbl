@@ -44,7 +44,7 @@ if option == '富邦悍將':
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
   Baseballfield.Kaohsiung()
-col1,col2=st.columns((7,3))
+col1,col2=st.columns((5,5))
 with col1:
   if option1=='球隊成績':
     st.header('球隊成績')
