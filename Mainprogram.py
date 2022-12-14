@@ -21,7 +21,7 @@ option = st.sidebar.selectbox( '選擇球隊？',team_list)
 option1 = st.sidebar.selectbox( '選擇所想查看的數據？成績至2014結算至2021由於有些球隊已易主或重新加入，有些數據不可考。', question_list)
 
 df = pd.read_excel("teamsdata.xlsx",sheet_name=option) 
-
+dount_chart_df = pd.read_excel("teamsdata(dount-chart).xlsx",sheet_name=option)
 
 expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
@@ -47,13 +47,12 @@ if option == '台鋼雄鷹':
 if option1=='球隊成績':
   st.header('球隊成績')
   st.dataframe(df)
-new_df=df.head(2)
-st.dataframe(new_df)
+  
 st.markdown('### 2022年主客場戰績Donut chart')
 plost.donut_chart(
-            data=new_df,
-            theta='2022(下)',
-            color='主場勝',
+            data=dount_chart_df ,
+            theta='數',
+            color='戰績',
             legend='bottom', 
             use_container_width=True)
          
