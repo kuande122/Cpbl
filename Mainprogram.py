@@ -59,6 +59,6 @@ with col2:
               legend='bottom',
               use_container_width=True)
 st.markdown('### 2022年年度主視覺')
-image = Image.open('年度主視覺'option+'.jpg')
+image = Image.open('年度主視覺'/option+'.jpg')
 st.image(image)
  
