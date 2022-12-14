@@ -99,7 +99,7 @@ elif option1=='投手成績':
 
 
 
-    teamsPitching=pd.read_excel("teamsPitching.xlsx"sheet_name=None) 
+    teamsPitching=pd.read_excel("teamsPitching.xlsx",sheet_name=None) 
     teamsPitching1=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
     st.dataframe(teamsPitching1)
     st.markdown('### 數據分析')
