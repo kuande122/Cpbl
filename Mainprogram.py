@@ -9,6 +9,7 @@ import Dragons
 import Guardians
 import TSGHAWKS
 import Baseballfield
+st.set_page_config(layout="wide")
 st.title('中華職棒資訊面板系統')
 st.sidebar.header('選擇球隊及數據')
 
