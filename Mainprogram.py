@@ -47,7 +47,7 @@ if option == '台鋼雄鷹':
 col1,col2=st.columns((6,4))
 with col1:
   if option1=='球隊成績':
-    st.header('球隊成績')
+    st.markdown('### 球隊成績')
     st.dataframe(df)
 with col2:  
   st.markdown('### 2022年主客場戰績Donut chart')
