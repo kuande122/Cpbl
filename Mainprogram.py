@@ -47,5 +47,6 @@ if option == '台鋼雄鷹':
 if option1=='球隊成績':
   st.header('球隊成績')
   st.dataframe(df)
-new_df=df[G:L]
+new_df=df.head(3)
 st.dataframe(new_df)
+
