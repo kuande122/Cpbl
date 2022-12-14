@@ -49,4 +49,11 @@ if option1=='球隊成績':
   st.dataframe(df)
 new_df=df.head(3)
 st.dataframe(new_df)
-
+st.markdown('### 2022年主客場戰績Donut chart')
+plost.donut_chart(
+            data=df,
+            theta='2022(下)',
+            color='主場勝',
+            legend='bottom', 
+            use_container_width=True)
+         
