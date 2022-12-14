@@ -67,19 +67,19 @@ elif option1=='投手成績':
     teamsPitching1=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
     st.dataframe(teamsPitching1)
     st.markdown('### 數據分析')
-    #plt.style.use("ggplot")
-    #plt.plot(BrothersPitching.年度, BrothersPitching.防禦率,'.-' ,color='yellow')
+    plt.style.use("ggplot")
+    plt.plot(teamsPitching.年度, teamsPitching.防禦率) 
     #plt.plot(UnilionsPitching.年度, UnilionsPitching.防禦率,'.-' ,color='darkorange')
     #plt.plot(DragonsPitching.年度, DragonsPitching.防禦率, '.-',color='red')
     #plt.plot(GuardiansPitching.年度, GuardiansPitching.防禦率,'.-', color='darkblue')
     #plt.plot(RakutenPitching.年度, RakutenPitching.防禦率,'.-', color='maroon')
-    #plt.xticks([2021,2020,2019,2018,2017,2016,2015,2014])
-    #plt.xticks(BrothersPitching.年度) # 設定x軸
+    plt.xticks([2022,2021,2020,2019,2018,2017,2016,2015,2014])
+    plt.xticks(teamsPitching.年度) # 設定x軸
     #plt.xticks(UnilionsPitching.年度) 
     #plt.xticks(RakutenPitching.年度) 
     #plt.xticks(GuardiansPitching.年度)
     #plt.xticks(DragonsPitching.年度) 
-    #plt.title('CTBC Brothers Pitching ERA VS Other Teams ') # 設定圖表標題
+    plt.title(option+'Pitching ERA VS Other Teams') # 設定圖表標題
     #plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
-    #st.pyplot(plt) 
+    st.pyplot(plt) 
  
