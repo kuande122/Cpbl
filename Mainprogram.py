@@ -74,7 +74,7 @@ elif option1=='投手成績':
     st.dataframe(teamsPitching1)
     st.markdown('### 數據分析')
     plt.style.use("ggplot")
-    plt.plot(teamsPitching:{sheet_name="中信兄弟"}.年度, teamsPitching:{sheet_name="中信兄弟"}.防禦率,'.-' ,color='yellow') 
+    plt.plot(teamsPitching_Brothers.年度, teamsPitching_Brothers.防禦率,'.-' ,color='yellow') 
     plt.plot(teamsPitching_Unilions.年度, teamsPitching_Unilions.防禦率,'.-' ,color='darkorange')
     plt.plot(teamsPitching_Dragons.年度, teamsPitching_Dragons.防禦率, '.-',color='red')
     plt.plot(teamsPitching_Guardians.年度, teamsPitching_Guardians.防禦率,'.-', color='darkblue')
@@ -92,3 +92,21 @@ elif option1=='投手成績':
     plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
     st.pyplot(plt) 
  
+
+
+
+
+
+
+
+    teamsPitching=pd.read_excel("teamsPitching.xlsx"sheet_name=None) 
+    teamsPitching1=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
+    st.dataframe(teamsPitching1)
+    st.markdown('### 數據分析')
+    plt.style.use("ggplot")
+    plt.plot(teamsPitching.年度,teamsPitching.防禦率) 
+    plt.xticks([2022,2021,2020,2019,2018,2017,2016,2015,2014])
+    plt.xlabel('Year',fontsize="10")
+    plt.ylabel('ERA',fontsize="10")
+    plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
+    st.pyplot(plt) 
