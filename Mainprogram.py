@@ -2,6 +2,7 @@ import streamlit as st
 import xlrd 
 import openpyxl
 import pandas as pd
+import matplotlib.pyplot as plt
 import Brothers
 import Unilions
 import Rakuten
