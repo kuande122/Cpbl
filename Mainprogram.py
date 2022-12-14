@@ -80,7 +80,7 @@ elif option1=='投手成績':
     plt.plot(teamsPitching_Guardians.年度, teamsPitching_Guardians.防禦率,'.-', color='darkblue')
     plt.plot(teamsPitching_Rakuten.年度, teamsPitching_Rakuten.防禦率,'.-', color='maroon')
     plt.plot(teamsPitching_TSGHAWKS.年度, teamsPitching_TSGHAWKS.防禦率,'.-', color='darkgreen')
-    plt.xlabel('Year',fontsize="10")
+    plt.xlabel('Season',fontsize="10")
     plt.ylabel('ERA',fontsize="10")
     plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
     st.pyplot(plt) 
