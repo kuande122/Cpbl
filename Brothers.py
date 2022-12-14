@@ -26,6 +26,6 @@ def Brothers():
   st.write("嗆司曲 兄弟精神")
   audio_file = open("Brothers/兄弟精神.mp3", "rb")
   st.audio(audio_file.read()) 
-
+中信兄弟=Brothers()
   
   
