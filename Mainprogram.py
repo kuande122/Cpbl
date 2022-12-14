@@ -33,4 +33,5 @@ if option == '富邦悍將':
 if option == '台鋼雄鷹':
   TSGHAWKS.TSGHAWKS()
   Baseballfield.Kaohsiung()
-st.header('球隊成績')
+if option1=='球隊成績':
+  st.header('球隊成績')
