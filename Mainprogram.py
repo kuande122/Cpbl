@@ -74,7 +74,7 @@ elif option1=='投手成績':
     st.dataframe(teamsPitching1)
     st.markdown('### 數據分析')
     plt.style.use("ggplot")
-    plt.plot(teamsPitching{sheet_name="中信兄弟"}.年度, teamsPitching{sheet_name="中信兄弟"}.防禦率,'.-' ,color='yellow') 
+    plt.plot(teamsPitching:{sheet_name="中信兄弟"}.年度, teamsPitching:{sheet_name="中信兄弟"}.防禦率,'.-' ,color='yellow') 
     plt.plot(teamsPitching_Unilions.年度, teamsPitching_Unilions.防禦率,'.-' ,color='darkorange')
     plt.plot(teamsPitching_Dragons.年度, teamsPitching_Dragons.防禦率, '.-',color='red')
     plt.plot(teamsPitching_Guardians.年度, teamsPitching_Guardians.防禦率,'.-', color='darkblue')
