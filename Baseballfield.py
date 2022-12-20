@@ -96,14 +96,10 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/新莊全景.png')
         st.image(image)
       with col2:
-         # add marker for Liberty Bell
-        m5 = folium.Map(width='50%', height='96%',location=[25.04118, 121.44784], zoom_start=17)
+        map = folium.Map(width='85%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
         tooltip = "新北新莊棒球場"
-        folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip
-        ).add_to(m5)
-
-        # call to render Folium map in Streamlit
-        folium_static(m5)
+        folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip).add_to(map)
+        folium_static(map)
    if option_teams == '台鋼雄鷹':
       col1, col2 = st.columns(2)
       with col1:
