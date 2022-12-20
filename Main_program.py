@@ -23,3 +23,4 @@ expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客�
 
 
 #-----teams_information&teams_map-----------------------------------------
+teams_information.teams_information(option_teams)
