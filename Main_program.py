@@ -36,5 +36,5 @@ image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_t
 st.image(image)
 if option_teams=="台鋼雄鷹":
   expander = st.expander("台鋼雄鷹為2022新加入之球隊，尚未有年度主視覺")
-  st.write(expander)
+  expander.write("")
 
