@@ -1,7 +1,7 @@
 import streamlit as st  
 from PIL import Image  
 def teams_information(option_teams):
-  if option == '中信兄弟':
+  if option_teams == '中信兄弟':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('Brothers/Brothers.png')
@@ -28,7 +28,7 @@ def teams_information(option_teams):
     audio_file = open("Brothers/兄弟精神.mp3", "rb")
     st.audio(audio_file.read()) 
     
-  if option == '統一7-ELEVEn獅':
+  if option_teams == '統一7-ELEVEn獅':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('Unilions/Unilions.png')
@@ -55,7 +55,7 @@ def teams_information(option_teams):
     audio_file = open("Unilions/誰與爭鋒.mp3", "rb")
     st.audio(audio_file.read()) 
     
-  if option == '樂天桃猿':
+  if option_teams == '樂天桃猿':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('Rakuten/Rakuten.png')
@@ -82,7 +82,7 @@ def teams_information(option_teams):
     audio_file = open("Rakuten/超越夢想.mp3", "rb")
     st.audio(audio_file.read()) 
 
-  if option == '味全龍':
+  if option_teams == '味全龍':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('Dragons/Dragons.png')
@@ -109,7 +109,7 @@ def teams_information(option_teams):
     audio_file = open("Dragons/龍霸四方.mp3", "rb")
     st.audio(audio_file.read()) 
     
-  if option == '富邦悍將':
+  if option_teams == '富邦悍將':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('Guardians/Guardians.png')
@@ -136,7 +136,7 @@ def teams_information(option_teams):
     audio_file = open("Guardians/超強一擊.mp3", "rb")
     st.audio(audio_file.read()) 
     
-  if option == '台鋼雄鷹':
+  if option_teams == '台鋼雄鷹':
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('TSGHAWKS/TSGHAWKS.jpg')
