@@ -15,7 +15,7 @@ st.title('中華職棒資訊面板系統')
 image=Image.open('CPBL logo.png')
 st.sidebar.image(image)
 st.sidebar.title('請選擇球隊及想查看的數據')
-teams_list={'中信兄弟','樂天桃猿','富邦悍將','統一7-ELEVEn獅', '味全龍','台鋼雄鷹'}
+teams_list={'中信兄弟':'Brothers','樂天桃猿':'Rakuten','富邦悍將':'Guardians','統一7-ELEVEn獅':'Unilions', '味全龍':'Dragons','台鋼雄鷹':'TSGHAWKS'}
 option_teams = st.sidebar.selectbox('選擇球隊？',teams_list)
 
 data_list={'投手成績', '打擊成績','球隊成績', '守備成績'}
@@ -32,5 +32,5 @@ Baseballfield.Baseballfield(option_teams)
 
 #-----年度主視覺-----------------------------------------------------------
 st.markdown('### 2022年年度主視覺')
-image = Image.open("年度主視覺"+"/"+option_teams+".jpg")
+image = Image.open("teams_information"+"/"+option_teams[teams_list]+"/"+option_teams+".jpg")
 st.image(image)
