@@ -5,7 +5,7 @@ def teams_information(option_teams):
   if option_teams == '中信兄弟':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('Brothers/Brothers.png')
+      image = Image.open('teams_information/Brothers/Brothers.png')
       st.image(image)
     with col2:
       st.write("""## 中信兄弟""")
@@ -20,19 +20,19 @@ def teams_information(option_teams):
     col2.metric("年度冠軍🏆", "9  次")
     st.write('中信兄弟隊前身兄弟象隊為中職四支創始球隊之一，1992年至1994年曾創下空前的連續三年奪下總冠軍之傲人成績，1992年球季更創下了例行賽45場中37場封王最快速封王的紀錄。之後兄弟象隊於2001年至2003年達成第二次三連霸紀錄，成為中職至今唯一兩度締造三連霸紀錄的球隊。2010年兄弟象隊達成了隊史千勝紀錄，為中職至今唯二達成的球隊，同年下半季取得隊史第11座季冠軍，在當年總冠軍賽以四連勝橫掃興農牛隊，奪下隊史第七座總冠軍，之後10年間，中信兄弟多次闖進總冠軍賽卻始終鎩羽而歸，終於在2021年奪下了隊史第八座總冠軍，奪冠次數僅次於統一7-ELEVEn獅隊，為中華職棒史上奪得總冠軍次數第二多的球隊。')
     st.write("2022年度歌曲 感動黃潮")
-    audio_file = open("Brothers/感動黃潮.mp3", "rb")
+    audio_file = open("teams_information/Brothers/感動黃潮.mp3", "rb")
     st.audio(audio_file.read()) 
     st.write("2021年度歌曲 一心兄弟")
-    audio_file = open("Brothers/一心兄弟.mp3", "rb")
+    audio_file = open("teams_information/Brothers/一心兄弟.mp3", "rb")
     st.audio(audio_file.read())  
     st.write("嗆司曲 兄弟精神")
-    audio_file = open("Brothers/兄弟精神.mp3", "rb")
+    audio_file = open("teams_information/Brothers/兄弟精神.mp3", "rb")
     st.audio(audio_file.read()) 
     
   if option_teams == '統一7-ELEVEn獅':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('Unilions/Unilions.png')
+      image = Image.open('teams_information/Unilions/Unilions.png')
       st.image(image)
     with col2:
       st.write("""## 統一7-ELEVEn獅""")
@@ -47,19 +47,19 @@ def teams_information(option_teams):
     col2.metric("年度冠軍🏆", "10  次")
     st.write('統一7-ELEVEn獅隊為台灣在1989年成立中華職棒聯盟時的四支創始球隊之一，也是唯一從職棒元年存續至今的球隊，最初僅命名為統一獅隊；是聯盟第一支有二軍的球隊，同時也是目前中華職棒聯盟贏得總冠軍次數最多的球隊，母企業為統一企業。由於中職初創時統一獅隊成軍較晚，人手不足，經驗也有限，因此於職棒元年開打後，即創下八連敗的紀錄，並在上半球季敬陪末座。但秉著「誠實苦幹」的企業精神，統一球團積極整軍經武，使獅子軍下半球季戰績得以回升，全年度排名第三，免於墊底。隔年更在投打戰力補強有成的情況下，於總冠軍賽擊敗味全龍隊，笑擁隊史首座總冠軍獎盃。')
     st.write("2022年度歌曲 大贏四方")
-    audio_file = open("Unilions/大贏四方.mp3", "rb")
+    audio_file = open("teams_information/Unilions/大贏四方.mp3", "rb")
     st.audio(audio_file.read()) 
     st.write("2021年度歌曲 冠軍獅王")
-    audio_file = open("Unilions/冠軍獅王.mp3", "rb")
+    audio_file = open("teams_information/Unilions/冠軍獅王.mp3", "rb")
     st.audio(audio_file.read())  
     st.write("嗆司曲 誰與爭鋒")
-    audio_file = open("Unilions/誰與爭鋒.mp3", "rb")
+    audio_file = open("teams_information/Unilions/誰與爭鋒.mp3", "rb")
     st.audio(audio_file.read()) 
     
   if option_teams == '樂天桃猿':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('Rakuten/Rakuten.png')
+      image = Image.open('teams_information/Rakuten/Rakuten.png')
       st.image(image)
     with col2:
       st.write("""## 樂天桃猿""")
@@ -74,19 +74,19 @@ def teams_information(option_teams):
     col2.metric("年度冠軍🏆", "7  次")
     st.write('2019年07月03日，甫達成季冠軍五連霸的Lamigo桃猿隊於選秀會結束後，突如其來宣佈因不堪連年經營虧損，決定轉賣球隊，也震撼了原先尚在歡慶味全龍隊重返職棒的中華職棒。09月19日，桃猿隊正式宣佈將經營權完全轉售予已在日本職棒擁有東北樂天金鷲隊的日商樂天集團，結束16年職棒經營事業，樂天也向桃猿保證，接手後大高熊育樂股份有限公司（經營桃猿隊）、大桃猿育樂股份有限公司（經營桃園國際棒球場）的球隊相關工作人員都會予以留用。')
     st.write("2022年度歌曲 Rise Up")
-    audio_file = open("Rakuten/Rise Up.mp3", "rb")
+    audio_file = open("teams_information/Rakuten/Rise Up.mp3", "rb")
     st.audio(audio_file.read()) 
     st.write("2021年度歌曲 一起更強")
-    audio_file = open("Rakuten/一起更強.mp3", "rb")
+    audio_file = open("teams_information/Rakuten/一起更強.mp3", "rb")
     st.audio(audio_file.read())  
     st.write("嗆司曲 超越夢想")
-    audio_file = open("Rakuten/超越夢想.mp3", "rb")
+    audio_file = open("teams_information/Rakuten/超越夢想.mp3", "rb")
     st.audio(audio_file.read()) 
 
   if option_teams == '味全龍':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('Dragons/Dragons.png')
+      image = Image.open('teams_information/Dragons/Dragons.png')
       st.image(image)
     with col2:
       st.write("""## 味全龍""")
@@ -101,19 +101,19 @@ def teams_information(option_teams):
     col2.metric("年度冠軍🏆", "4  次")
     st.write('味全龍隊是中華職棒所屬的球隊，歷史可追溯至1980年代的業餘成棒。其首次進軍中職時，是由味全企業出資成立「純青職棒事業股份有限公司」經營；但1999年季後因經營虧損，以及併購母企業的頂新集團無意繼續經營，最終決定解散球隊。但相隔20年後的2019年，頂新集團出乎意料宣佈重組球隊，並通過聯盟審核，以聯盟第五隊的身份重返中華職棒。')
     st.write("2022年度歌曲 龍往直前")
-    audio_file = open("Dragons/龍往直前.mp3", "rb")
+    audio_file = open("teams_information/Dragons/龍往直前.mp3", "rb")
     st.audio(audio_file.read()) 
     st.write("2021年度歌曲 Come Back Again")
-    audio_file = open("Dragons/Come Back Again.mp3", "rb")
+    audio_file = open("teams_information/Dragons/Come Back Again.mp3", "rb")
     st.audio(audio_file.read())  
     st.write("嗆司曲 龍霸四方")
-    audio_file = open("Dragons/龍霸四方.mp3", "rb")
+    audio_file = open("teams_information/Dragons/龍霸四方.mp3", "rb")
     st.audio(audio_file.read()) 
     
   if option_teams == '富邦悍將':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('Guardians/Guardians.png')
+      image = Image.open('teams_information/Guardians/Guardians.png')
       st.image(image)
     with col2:
       st.write("""## 富邦悍將""")
@@ -128,19 +128,19 @@ def teams_information(option_teams):
     col2.metric("年度冠軍🏆", "3  次")
     st.write('富邦悍將隊（Fubon Guardians）的前身可追溯至成立於1989年的社會甲組球隊俊國建設棒球隊。俊國棒球隊進軍職棒後更名為俊國熊隊，其後歷經三次轉賣，隊名也陸續更改為興農熊隊、興農牛隊、義大犀牛隊，並曾獲得三次總冠軍。2016年季中，當時擁有義大犀牛隊的義联集團宣佈出售球隊，最後由長期贊助業餘棒運的富邦金控以新台幣3億元買下。該年季後，義大隊奪得隊史首座也是最後一座的總冠軍後，隨即自同年11月01日起改由富邦金控接手經營，並在11月15日正式公佈新隊名為富邦悍將隊。')
     st.write("2022年度歌曲 We Will Win")
-    audio_file = open("Guardians/We Will Win.mp3", "rb")
+    audio_file = open("teams_information/Guardians/We Will Win.mp3", "rb")
     st.audio(audio_file.read()) 
     st.write("2021年度歌曲 FIGHT ON")
-    audio_file = open("Guardians/FIGHT ON.mp3", "rb")
+    audio_file = open("teams_information/Guardians/FIGHT ON.mp3", "rb")
     st.audio(audio_file.read())  
     st.write("嗆司曲 超強一擊")
-    audio_file = open("Guardians/超強一擊.mp3", "rb")
+    audio_file = open("teams_information/Guardians/超強一擊.mp3", "rb")
     st.audio(audio_file.read()) 
     
   if option_teams == '台鋼雄鷹':
     col1, col2 = st.columns(2)
     with col1:
-      image = Image.open('TSGHAWKS/TSGHAWKS.jpg')
+      image = Image.open('teams_information/TSGHAWKS/TSGHAWKS.jpg')
       st.image(image)
     with col2:
       st.write("""## 台鋼雄鷹""")
