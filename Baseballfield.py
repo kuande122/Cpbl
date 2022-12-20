@@ -114,7 +114,7 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/高雄澄清湖球場.jpg')
         st.image(image)
       with col2:  
-        map = folium.Map(width='80%', height='100%',location=[22.65449, 120.35892], zoom_start=17)
+        map = folium.Map(width='90%', height='100%',location=[22.65449, 120.35892], zoom_start=17)
         tooltip = "高雄市澄清湖棒球場"
         folium.Marker([22.65449, 120.35892], popup="高雄市澄清湖棒球場", tooltip=tooltip).add_to(map)
         folium_static(map)
