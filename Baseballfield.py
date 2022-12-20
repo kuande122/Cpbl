@@ -79,11 +79,10 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/桃園球場.png')
         st.image(image)
       with col2: 
-        m4 = folium.Map(width='50%', height='80%',location=[25.00054,121.20038], zoom_start=16)
+        map = folium.Map(width='85%', height='80%',location=[25.00054,121.20038], zoom_start=16)
         tooltip = "桃園國際棒球場"
-        folium.Marker([25.00054,121.20038], popup="桃園國際棒球場", tooltip=tooltip
-        ).add_to(m4)
-        folium_static(m4)
+        folium.Marker([25.00054,121.20038], popup="桃園國際棒球場", tooltip=tooltip).add_to(map)
+        folium_static(map)
    if option_teams == '富邦悍將':
       col1, col2 = st.columns(2)
       with col1:
