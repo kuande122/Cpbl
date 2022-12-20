@@ -21,7 +21,7 @@ teams_list={'中信兄弟':'Brothers','樂天桃猿':'Rakuten','富邦悍將':'G
 option_teams = st.sidebar.selectbox('選擇球隊🤔？',teams_list)
 
 data_list={'投手成績', '打擊成績','球隊成績', '守備成績'}
-option_data = st.sidebar.selectbox('選擇球隊🤔？',data_list)
+option_data = st.sidebar.selectbox('選擇所想查看的數據🤔？成績至2014結算至2022,由於有些球隊已易主或新加入，有些數據不可考。',data_list)
 
 expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
