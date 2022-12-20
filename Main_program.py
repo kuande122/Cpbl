@@ -35,5 +35,5 @@ st.markdown('### 2022年年度主視覺')
 image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_teams+".jpg")
 st.image(image)
 if option_teams=="台鋼雄鷹":
-  st.markdown('##### 台鋼雄鷹為2022新加入之球隊，尚未有年度主視覺')
+  st.markdown('##### 附:台鋼雄鷹為2022新加入之球隊，尚未有年度主視覺')
 
