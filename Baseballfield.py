@@ -47,13 +47,10 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/台北天母球場.jpg')
         st.image(image)
       with col2: 
-        m3 = folium.Map(width='50%', height='100%',location=[25.11374, 121.53345], zoom_start=17)
-
-        # add marker for Liberty Bell
+        map = folium.Map(width='85%', height='90%',location=[25.11374, 121.53345], zoom_start=17)
         tooltip = "臺北天母棒球場"
-        folium.Marker([25.11374, 121.53345], popup="臺北天母棒球場", tooltip=tooltip
-        ).add_to(m3)
-        folium_static(m3)
+        folium.Marker([25.11374, 121.53345], popup="臺北天母棒球場", tooltip=tooltip).add_to(map)
+        folium_static(map)
       col1, col2 = st.columns(2)
       with col1:
         st.header('主場:新竹市立棒球場')
