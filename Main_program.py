@@ -33,6 +33,7 @@ Baseballfield.Baseballfield(option_teams)
 
 
 #----teams_data-----------------------------------------------------------
+st.markdown("### "option_data"')
 data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams) 
 st.dataframe(data)
 #-----年度主視覺-----------------------------------------------------------
