@@ -1,6 +1,9 @@
 import streamlit as st  #streamlit套件
 from PIL import Image   #圖片套件
 import teams_information
+import Baseballfield
+
+
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="CPBL Dashboard",
                    page_icon='⚾',
@@ -24,3 +27,4 @@ expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客�
 
 #-----teams_information&teams_map-----------------------------------------
 teams_information.teams_information(option_teams)
+Baseballfield.Baseballfield(option_teams)
