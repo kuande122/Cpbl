@@ -2,7 +2,9 @@ import streamlit as st  #streamlit套件
 from PIL import Image   #圖片套件
 import teams_information
 import Baseballfield
-
+import xlrd 
+import openpyxl
+import pandas as pd
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="CPBL Dashboard",
@@ -30,6 +32,9 @@ teams_information.teams_information(option_teams)
 Baseballfield.Baseballfield(option_teams)
 
 
+#----teams_data-----------------------------------------------------------
+data = pd.read_excel(option_data+'.xlsx",sheet_name=option_teams) 
+st.dataframe(data)
 #-----年度主視覺-----------------------------------------------------------
 st.markdown('### 2022年年度主視覺')
 image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_teams+".jpg")
