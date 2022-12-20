@@ -36,6 +36,8 @@ Baseballfield.Baseballfield(option_teams)
 st.subheader(option_data)
 data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_col='年度') 
 st.dataframe(data)
+
+
 #-----年度主視覺-----------------------------------------------------------
 st.markdown('### 2022年年度主視覺')
 image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_teams+".jpg")
