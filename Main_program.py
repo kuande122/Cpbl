@@ -1,6 +1,6 @@
 import streamlit as st  #streamlit套件
 from PIL import Image   #圖片套件
-
+import teams_information
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="CPBL Dashboard",
                    page_icon='⚾',
