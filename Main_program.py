@@ -28,3 +28,9 @@ expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客�
 #-----teams_information&teams_map-----------------------------------------
 teams_information.teams_information(option_teams)
 Baseballfield.Baseballfield(option_teams)
+
+
+#-----年度主視覺-----------------------------------------------------------
+st.markdown('### 2022年年度主視覺')
+image = Image.open("teams_information"+"/"+option_teams+"/"+option_teams+".jpg")
+st.image(image)
