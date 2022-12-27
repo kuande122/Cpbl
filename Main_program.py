@@ -36,7 +36,7 @@ col1, col2,col3 = st.columns(3)
 with col1:
   st.markdown('### 2022年度主場球衣')
   image=Image.open('球衣/'+option_teams+'1.jpg')
-  image2 = image.resize((800,800)) 
+  image2 = image.resize((800,1200)) 
   st.image(image2)
 with col2:  
   st.markdown('### 2022年度客場球衣')
