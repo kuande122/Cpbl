@@ -39,9 +39,9 @@ with col1:
   image2 = image.resize((800,1200)) 
   st.image(image2)
   
-  
-  for i in imgs:
-    image=Image.open('球衣/'+option_teams+'1.jpg')
+  image=Image.open('球衣/'+option_teams+'1.jpg')
+  for i in image:
+    image = Image.open(i)
     size = image.size
     max = 1200                    # 設定長或寬最大的數值
     if size[0]>size[1]:          # 如果原始圖片 width 大於 height
