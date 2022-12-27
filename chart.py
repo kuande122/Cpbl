@@ -34,5 +34,5 @@ def chart(option_data):
       plt.plot(data6.年度, data6.打擊率,'.-', color='darkgreen')
       plt.xlabel('Season',fontsize="10")
       plt.title('Batting Avg')
-      plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
+      plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
