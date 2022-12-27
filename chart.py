@@ -4,7 +4,6 @@ import openpyxl         #excel套件
 import pandas as pd     #pandas套件(資料分析)
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 def chart(option_data):
-  st.markdown('### 數據分析')
   data1=pd.read_excel("data/"+option_data+".xlsx",sheet_name="中信兄弟") 
   data2=pd.read_excel("data/"+option_data+".xlsx",sheet_name="統一7-ELEVEn獅") 
   data3=pd.read_excel("data/"+option_data+".xlsx",sheet_name="樂天桃猿") 
