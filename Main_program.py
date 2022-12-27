@@ -40,7 +40,7 @@ with col1:
   st.image(image2)
   
   
-  for i in imgs:
+  for i in image:
     image=Image.open('球衣/'+option_teams+'1.jpg')
     size = image.size
     max = 1200                    # 設定長或寬最大的數值
