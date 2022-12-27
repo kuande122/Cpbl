@@ -3,6 +3,9 @@ import xlrd             #excel套件
 import openpyxl         #excel套件
 import pandas as pd     #pandas套件(資料分析)
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
+import plost  
+
+
 def chart(option_data):
   data1=pd.read_excel("data/"+option_data+".xlsx",sheet_name="中信兄弟") 
   data2=pd.read_excel("data/"+option_data+".xlsx",sheet_name="統一7-ELEVEn獅") 
@@ -36,3 +39,9 @@ def chart(option_data):
       plt.title('Batting Avg')
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
+    if option_data=='球隊成績':   
+      dount_chart_df = pd.read_excel("data/teamsdata(dount-chart).xlsx",sheet_name=option_teams)
+      plost.donut_chart(data=dount_chart_df ,               
+                        color='項目',
+                        legend='bottom',
+                        use_container_width=True)
