@@ -42,7 +42,7 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/台北天母球場.jpg')
         st.image(image)
       with col2: 
-        map = folium.Map(width='85%', height='90%',location=[25.11374, 121.53345], zoom_start=17)
+        map = folium.Map(width='100%', height='100%',location=[25.11374, 121.53345], zoom_start=17)
         tooltip = "臺北天母棒球場"
         folium.Marker([25.11374, 121.53345], popup="臺北天母棒球場", tooltip=tooltip).add_to(map)
         folium_static(map)
@@ -55,7 +55,7 @@ def Baseballfield(option_teams):
         image = Image.open('Baseballfield/新竹棒球場.jpg')
         st.image(image)
       with col2:
-         map = folium.Map(width='85%', height='100%',location=[24.8067, 120.96088], zoom_start=17)
+         map = folium.Map(width='100%', height='100%',location=[24.8067, 120.96088], zoom_start=17)
          tooltip = "新竹市立棒球場"
          folium.Marker([24.8067, 120.96088], popup="新竹市立棒球場", tooltip=tooltip).add_to(map)
          folium_static(map)
