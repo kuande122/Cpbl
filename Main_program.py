@@ -64,6 +64,11 @@ data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_c
 st.dataframe(data)
 
 
+#-----analysis_chart---------------------------------------------------
+st.markdown('### 球隊數據分析')
+chart._chart(option_data)
+
+
 #-----年度主視覺-----------------------------------------------------------
 st.markdown('### 2022年年度主視覺')
 image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_teams+".jpg")
