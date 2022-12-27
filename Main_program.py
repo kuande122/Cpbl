@@ -65,6 +65,7 @@ st.subheader(option_data)
 data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_col='年度') 
 st.dataframe(data)
 if option_data=='球隊成績':   
+   st.markdown('### 球隊數據分析')
    dount_chart_df = pd.read_excel("data/teamsdata(dount-chart).xlsx",sheet_name=option_teams)
    plost.donut_chart(data=dount_chart_df ,               
                         color='項目',
