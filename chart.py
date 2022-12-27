@@ -38,7 +38,7 @@ def chart(option_data):
       plt.title('Batting Avg')
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
-   if option_data=='守備成績':
+    if option_data=='守備成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.守備率,'.-' ,color='yellow') 
       plt.plot(data2.年度, data2.守備率,'.-' ,color='darkorange')
