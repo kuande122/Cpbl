@@ -27,7 +27,12 @@ expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
 
 
-#-----主客假日球衣
+#-----teams_information&teams_map-----------------------------------------
+teams_information.teams_information(option_teams)
+Baseballfield.Baseballfield(option_teams)
+
+
+#-----主客假日球衣-------------------------------------------------------------
 col1, col2,col3 = st.columns(3)
 with col1:
   st.markdown('### 2022年度主場球衣')
@@ -35,11 +40,8 @@ with col2:
   st.markdown('### 2022年度客場球衣')
 with col3:
   st.markdown('### 2022年度假日球衣')
-#-----teams_information&teams_map-----------------------------------------
-teams_information.teams_information(option_teams)
-Baseballfield.Baseballfield(option_teams)
-
-
+  
+  
 #----teams_data-----------------------------------------------------------
 st.subheader(option_data)
 data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_col='年度') 
