@@ -7,7 +7,7 @@ def chart(option_data):
   st.markdown('### 數據分析')
   col1,col2=st.columns((6,4))
   with col1:
-      data=pd.read_excel("teamsPitching.xlsx",sheet_name=None) 
+      data=pd.read_excel("data/"+option_data+".xlsx",sheet_name=None) 
 
       plt.style.use("ggplot")
       plt.plot(data.年度, data.防禦率,'.-' ,color='yellow') 
