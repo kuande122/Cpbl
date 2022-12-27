@@ -51,8 +51,8 @@ def chart(option_data):
       plt.xlabel('Season',fontsize="10")
       plt.title('Defense FPCT')
       plt.legend(labels=["Brothers Defense", "Unilions Defense","Dragons Defense","Guardians Defense","Rakuten Defense","TSGHAWKS Defense"], loc = 'best')
-      st.pyplot(plt) 
- with col2:     
+      st.pyplot(plt)
+   with col2:     
       plt.bar(data1.年度,data1.奪三振)
       plt.bar(data2.年度,data2.奪三振) 
       plt.bar(data3.年度,data3.奪三振)
