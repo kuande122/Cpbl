@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 import plost  
 
 
-def chart(option_data,option_teams ):
+def chart(option_data,option_teams):
   data1=pd.read_excel("data/"+option_data+".xlsx",sheet_name="中信兄弟") 
   data2=pd.read_excel("data/"+option_data+".xlsx",sheet_name="統一7-ELEVEn獅") 
   data3=pd.read_excel("data/"+option_data+".xlsx",sheet_name="樂天桃猿") 
