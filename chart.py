@@ -14,7 +14,7 @@ def chart(option_data):
   data6=pd.read_excel("data/"+option_data+".xlsx",sheet_name="台鋼雄鷹")  
   col1,col2=st.columns((6,4))
   with col1:
-    while option_data=='投手成績':
+    if option_data=='投手成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.防禦率,'.-' ,color='yellow') 
       plt.plot(data2.年度, data2.防禦率,'.-' ,color='darkorange')
@@ -26,8 +26,8 @@ def chart(option_data):
       plt.title('Pitching ERA')
       plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
       st.pyplot(plt) 
-      break
-    while option_data=='打擊成績':
+     
+    if option_data=='打擊成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.打擊率,'.-' ,color='yellow') 
       plt.plot(data2.年度, data2.打擊率,'.-' ,color='darkorange')
@@ -39,8 +39,8 @@ def chart(option_data):
       plt.title('Batting Avg')
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
-      break
-    while option_data=='守備成績':
+    
+    if option_data=='守備成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.守備率,'.-' ,color='yellow') 
       plt.plot(data2.年度, data2.守備率,'.-' ,color='darkorange')
@@ -52,18 +52,6 @@ def chart(option_data):
       plt.title('Defense FPCT')
       plt.legend(labels=["Brothers Defense", "Unilions Defense","Dragons Defense","Guardians Defense","Rakuten Defense","TSGHAWKS Defense"], loc = 'best')
       st.pyplot(plt) 
-      break
-  with col2:
-    if option_data=='打擊成績':
-      plt.style.use("ggplot")
-      plt.plot(data1.年度, data1.長打率,'.-' ,color='yellow') 
-      plt.plot(data2.年度, data2.長打率,'.-' ,color='darkorange')
-      plt.plot(data3.年度, data3.長打率, '.-',color='red')
-      plt.plot(data4.年度, data4.長打率,'.-', color='darkblue')
-      plt.plot(data5.年度, data5.長打率,'.-', color='maroon')
-      plt.plot(data6.年度, data6.長打率,'.-', color='darkgreen')
-      plt.xlabel('Season',fontsize="10")
-      plt.title('Batting Avg')
-      plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
-      st.pyplot(plt) 
+   
+
 
