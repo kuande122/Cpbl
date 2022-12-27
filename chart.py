@@ -9,7 +9,7 @@ def chart(option_data):
   data2=pd.read_excel("data/"+option_data+".xlsx",sheet_name="統一7-ELEVEn獅") 
   data3=pd.read_excel("data/"+option_data+".xlsx",sheet_name="樂天桃猿") 
   data4=pd.read_excel("data/"+option_data+".xlsx",sheet_name="富邦悍將") 
-  data5=pd.read_excel("data/"+option_data+".xlsx",sheet_name="味全龍"") 
+  data5=pd.read_excel("data/"+option_data+".xlsx",sheet_name="味全龍") 
   data6=pd.read_excel("data/"+option_data+".xlsx",sheet_name="台鋼雄鷹")  
   col1,col2=st.columns((6,4))
   with col1:
