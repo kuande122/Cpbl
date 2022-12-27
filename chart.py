@@ -53,7 +53,7 @@ def chart(option_data):
       plt.legend(labels=["Brothers Defense", "Unilions Defense","Dragons Defense","Guardians Defense","Rakuten Defense","TSGHAWKS Defense"], loc = 'best')
       st.pyplot(plt) 
       break
-with col2:
+  with col2:
     if option_data=='打擊成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.長打率,'.-' ,color='yellow') 
