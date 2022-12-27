@@ -27,7 +27,7 @@ expander = st.sidebar.expander("專用數據翻譯")
 expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客場 BattingAvg打擊率 OBP上壘率 SLG長打率 Hit安打 Homerun全壘打 FPCT守備率 E失誤")
 
 
-#-----teams_information&teams_map-----------------------------------------
+#-----teams_information-----------------------------------------
 teams_information.teams_information(option_teams)
 
 
