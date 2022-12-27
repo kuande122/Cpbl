@@ -48,7 +48,10 @@ with col3:
   image=Image.open('球衣/'+option_teams+'3.jpg')
   image2 = image.resize((800,1200)) 
   st.image(image2)
-  
+if option_teams=="中信兄弟":  
+  st.markdown('##### 附:周二至周四的二連戰，著去年復古球衣；周末之三連戰則著去年主場球衣。已拋棄客場球衣。亦無假日版球衣。)
+if option_teams=="台鋼雄鷹":
+  st.markdown('##### 附:台鋼雄鷹為2022新加入之球隊，尚未有主客場、假日版球衣之設計。')
 #-----teams_map----------------------------------------- 
 Baseballfield.Baseballfield(option_teams)  
 
@@ -64,5 +67,5 @@ st.markdown('### 2022年年度主視覺')
 image = Image.open("teams_information"+"/"+teams_list[option_teams]+"/"+option_teams+".jpg")
 st.image(image)
 if option_teams=="台鋼雄鷹":
-  st.markdown('##### 附:台鋼雄鷹為2022新加入之球隊，尚未有年度主視覺')
+  st.markdown('##### 附:台鋼雄鷹為2022新加入之球隊，尚未有年度主視覺。')
 
