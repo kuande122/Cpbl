@@ -39,7 +39,6 @@ def chart(option_data):
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
   with col2:  
-    if option_data=='打擊成績':
       plt.style.use("ggplot")
       plt.plot(data1.年度, data1.上壘率,'.-' ,color='yellow') 
       plt.plot(data2.年度, data2.上壘率,'.-' ,color='darkorange')
