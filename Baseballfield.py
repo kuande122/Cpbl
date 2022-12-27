@@ -82,10 +82,10 @@ def Baseballfield(option_teams):
         st.write('螢幕：外野：LED大螢幕（左）、LED螢幕（右）內野：環狀屏LED')
         st.write('觀眾席數：12,150席(內野:8,150席，外野:4,000席)')
         st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
-        image = Image.open('Baseballfield/新莊全景.png')
+        image = Image.open('Baseballfield/新莊全景.jpg')
         st.image(image)
       with col2:
-        map = folium.Map(width='85%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
+        map = folium.Map(width='100%', height='100%',location=[25.04118, 121.44784], zoom_start=17)
         tooltip = "新北新莊棒球場"
         folium.Marker([25.04118, 121.44784], popup="新北市立新莊棒球場", tooltip=tooltip).add_to(map)
         folium_static(map)
