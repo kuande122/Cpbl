@@ -34,7 +34,7 @@ teams_information.teams_information(option_teams)
 #-----主客假日球衣-------------------------------------------------------------
 col1, col2,col3 = st.columns(3)
 with col1:
-  st.markdown('### 2022年度主場球衣')
+  a=st.markdown('### 2022年度主場球衣')
   image=Image.open('球衣/'+option_teams+'1.jpg')
   image2 = image.resize((800,1200)) 
   st.image(image2)
@@ -49,6 +49,7 @@ with col3:
   image2 = image.resize((800,1200)) 
   st.image(image2)
 if option_teams=="中信兄弟":  
+  a.replace('##### 2022年度復古球衣'))) 
   st.markdown('##### 附:周二至周四的二連戰，著去年復古球衣；周末之三連戰則著去年主場球衣。已拋棄客場球衣。亦無假日版球衣。')
 if option_teams=="台鋼雄鷹":
   st.markdown('##### 附:台鋼雄鷹為2022新加入之球隊，尚未有主客場、假日版球衣之設計。')
