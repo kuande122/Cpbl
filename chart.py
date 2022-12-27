@@ -23,7 +23,7 @@ def chart(option_data):
       plt.plot(data5.年度, data5.防禦率,'.-', color='maroon')
       plt.plot(data6.年度, data6.防禦率,'.-', color='darkgreen')
       plt.xlabel('Season',fontsize="10")
-      plt.title('ERA')
+      plt.title('Pitching ERA')
       plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
       st.pyplot(plt) 
     if option_data=='打擊成績':
@@ -38,4 +38,16 @@ def chart(option_data):
       plt.title('Batting Avg')
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
-   
+ with col2:  
+    if option_data=='打擊成績':
+      plt.style.use("ggplot")
+      plt.plot(data1.年度, data1.上壘率,'.-' ,color='yellow') 
+      plt.plot(data2.年度, data2.上壘率,'.-' ,color='darkorange')
+      plt.plot(data3.年度, data3.上壘率, '.-',color='red')
+      plt.plot(data4.年度, data4.上壘率,'.-', color='darkblue')
+      plt.plot(data5.年度, data5.上壘率,'.-', color='maroon')
+      plt.plot(data6.年度, data6.上壘率,'.-', color='darkgreen')
+      plt.xlabel('Season',fontsize="10")
+      plt.title('Batting OBP')
+      plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
+      st.pyplot(plt) 
