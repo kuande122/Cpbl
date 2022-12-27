@@ -66,7 +66,7 @@ def Baseballfield(option_teams):
         st.write('地址：桃園市中壢區芝芭里領航北路1段1號')
         st.write('觀眾席數：兩萬席（內野:12,000席，外野:8,000席）')
         st.write('全壘打牆距離：左外野：330英呎 中外野：400英呎 右外野：330英呎')
-        image = Image.open('Baseballfield/桃園球場.g')
+        image = Image.open('Baseballfield/桃園球場.jpg')
         st.image(image)
       with col2: 
         map = folium.Map(width='100%', height='100%',location=[25.00054,121.20038], zoom_start=16)
