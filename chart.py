@@ -66,4 +66,4 @@ with col2:
       plt.title('Batting Avg')
       plt.legend(labels=["Brothers Batting", "Unilions Batting","Dragons Batting","Guardians Batting","Rakuten Batting","TSGHAWKS Batting"], loc = 'best')
       st.pyplot(plt) 
-      break
+
