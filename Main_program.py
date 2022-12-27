@@ -68,7 +68,7 @@ if option_data=='球隊成績':
    dount_chart_df = pd.read_excel("data/teamsdata(dount-chart).xlsx",sheet_name=option_teams)
    plost.donut_chart(data=dount_chart_df ,               
                         color='項目',
-                        theta='',
+                        theta='戰績',
                         legend='bottom',
                         use_container_width=True)
 
