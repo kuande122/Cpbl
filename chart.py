@@ -25,4 +25,16 @@ def chart(option_data):
       plt.title('ERA')
       plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
       st.pyplot(plt) 
- 
+    if option_data=='打擊成績':
+      plt.style.use("ggplot")
+      plt.plot(data1.年度, data1.打擊率,'.-' ,color='yellow') 
+      plt.plot(data2.年度, data2.打擊率,'.-' ,color='darkorange')
+      plt.plot(data3.年度, data3.打擊率, '.-',color='red')
+      plt.plot(data4.年度, data4.打擊率,'.-', color='darkblue')
+      plt.plot(data5.年度, data5.打擊率,'.-', color='maroon')
+      plt.plot(data6.年度, data6.打擊率,'.-', color='darkgreen')
+      plt.xlabel('Season',fontsize="10")
+      plt.ylabel('ERA',fontsize="10")
+      plt.title('ERA')
+      plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
+      st.pyplot(plt) 
