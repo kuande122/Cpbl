@@ -41,11 +41,13 @@ with col1:
 with col2:  
   st.markdown('### 2022年度客場球衣')
   image=Image.open('球衣/'+option_teams+'2.jpg')
-  st.image(image)
+  image2 = image.resize((800,1200)) 
+  st.image(image2)
 with col3:
   st.markdown('### 2022年度假日球衣')
   image=Image.open('球衣/'+option_teams+'3.jpg')
-  st.image(image)
+  image2 = image.resize((800,1200)) 
+  st.image(image2)
   
 #-----teams_map----------------------------------------- 
 Baseballfield.Baseballfield(option_teams)  
