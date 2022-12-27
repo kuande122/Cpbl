@@ -38,24 +38,6 @@ with col1:
   image=Image.open('球衣/'+option_teams+'1.jpg')
   image2 = image.resize((800,1200)) 
   st.image(image2)
-  
-  image=Image.open('球衣/'+option_teams+'1.jpg')
-  for i in image:
-    image = Image.open(i)
-    size = image.size
-    max = 1200                    # 設定長或寬最大的數值
-    if size[0]>size[1]:          # 如果原始圖片 width 大於 height
-        scale = size[1]/size[0]  # 設定 scale 為 height/width
-        w = max                  # 設定調整後的寬度為最大的數值
-        h = int(max*scale)       # 設定調整後的高度為 max 乘以 scale ( 使用 int 去除小數點 )
-    else:                        # 如果原始圖片 width 小於等於 height
-        scale = size[0]/size[1]  # 設定 scale 為 width/height
-        w = int(max*scale)       # 設定調整後的寬度為 max 乘以 scale ( 使用 int 去除小數點 )
-        h = max                  # 設定調整後的高度為最大的數值
-    name = i.split('/')[::-1][0]
-    image2 = im.resize((w, h))      # 調整尺寸
-    st.image(image2)
-
 with col2:  
   st.markdown('### 2022年度客場球衣')
   image=Image.open('球衣/'+option_teams+'2.jpg')
