@@ -5,6 +5,7 @@ import Baseballfield
 import xlrd 
 import openpyxl
 import pandas as pd
+import chart
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="CPBL Dashboard",
@@ -64,7 +65,7 @@ data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_c
 st.dataframe(data)
 
 
-#-----analysis_chart---------------------------------------------------
+#-----chart---------------------------------------------------
 st.markdown('### 球隊數據分析')
 chart._chart(option_data)
 
