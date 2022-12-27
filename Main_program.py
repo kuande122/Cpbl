@@ -29,7 +29,6 @@ expander.write("ERA自責分率 StrikeOut三振 BB四死球 Home主場 Away客�
 
 #-----teams_information&teams_map-----------------------------------------
 teams_information.teams_information(option_teams)
-Baseballfield.Baseballfield(option_teams)
 
 
 #-----主客假日球衣-------------------------------------------------------------
@@ -42,6 +41,10 @@ with col3:
   st.markdown('### 2022年度假日球衣')
   
   
+#-----teams_map----------------------------------------- 
+Baseballfield.Baseballfield(option_teams)  
+
+
 #----teams_data-----------------------------------------------------------
 st.subheader(option_data)
 data = pd.read_excel("data/"+option_data+".xlsx",sheet_name=option_teams,index_col='年度') 
